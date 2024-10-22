@@ -24,15 +24,20 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* Navbar Styles */
 .flex-direction , nav ul{
     display: flex;
 }
 
+header {
+    max-width: 1340px;
+    height: 715px;
+}
+
+/* Navbar Styles */
 nav {
     justify-content: space-between;
-    width: 1100px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 50px auto;
     align-items: center;
 }
 
@@ -46,9 +51,62 @@ nav  ul  a {
     color: rgb(255, 255, 255);
 }
 
-@media screen and (mix-width : 576px) {
+.hamburger {
+    display: none;
+}
+
+/* Banner Styles */
+.brand {
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(230, 83, 60);
+}
+
+.item {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;;
+}
+
+.banner-title {
+    font-size: 4.7rem;
+    font-weight: 900;
+}
+
+.banner-description {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-3 {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (max-width : 576px) {
+    nav {
+        margin: 20px;
+    }
+    nav ul {
+        display: none;
+    }
     
-    
-    
+    .hamburger {
+        display: block;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
 
 }
